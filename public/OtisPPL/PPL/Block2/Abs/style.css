@@ -1,0 +1,480 @@
+body {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E201E;
+
+}
+
+
+.body2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Ensures vertical alignment of items */
+    margin: 0; /* Remove default margin */
+}
+
+.back {
+    width: 70px;
+    height: 70px;
+    margin: 50px; /* Ensures no additional margin affecting positioning */
+    align-self: flex-start; /* Aligns item to the start of the cross-axis (vertical) */
+    justify-self: flex-start; /* Aligns item to the start of the main-axis (horizontal) */
+    z-index: 100;
+}
+
+.row1 {
+    position: absolute;
+    top: 15%;
+    height: 150px;
+    width: 80%;
+    background-color: #3C3D37;
+    border-radius: 25px 25px 0 0;
+    
+}
+
+.row2 {
+    position: absolute;
+    top: 23.2%;
+    height: 150px;
+    width: 80%;
+    background-color: #697565;
+}
+
+.row3 {
+    position: absolute;
+    top: 31.4%;
+    height: 150px;
+    width: 80%;
+    background-color: #3C3D37;
+}
+
+.row4 {
+    position: absolute;
+    top: 39.6%;
+    height: 150px;
+    width: 80%;
+    background-color: #697565;
+}
+
+.row5 {
+    position: absolute;
+    top: 47.8%;
+    height: 150px;
+    width: 80%;
+    background-color: #3C3D37;
+}
+
+.row6 {
+    position: absolute;
+    top: 56%;
+    height: 150px;
+    width: 80%;
+    background-color: #697565;
+    border-radius: 0 0 25px 25px;
+}
+
+
+.backSquatInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 25px;
+    top: 16.5%;
+    left: 12%;
+}
+
+.deadliftInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 25px;
+    top: 25%;
+    left: 12%;
+}
+
+.barbellHipThrustInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 22px;
+    top: 32.5%;
+    left: 12%;
+}
+
+.DWLInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 20px;
+    top: 41%;
+    left: 12%;
+}
+
+.LeInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 20px;
+    top: 50%;
+    left: 12%;
+}
+
+.SLCInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 20px;
+    top: 58.5%;
+    left: 12%;
+}
+
+.vertical1 {
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    width: 2px;
+    height: 898px;
+    background-color: #1E201E;
+    z-index: 10;
+
+}
+
+.vertical2 {
+    position: absolute;
+    top: 15%;
+    left: 50.25%;
+    width: 2px;
+    height: 898px;
+    background-color: #1E201E;
+    z-index: 15;
+
+}
+
+.vertical3 {
+    position: absolute;
+    top: 15%;
+    left: 63.5%;
+    width: 2px;
+    height: 898px;
+    background-color: #1E201E;
+    z-index: 15;
+
+}
+
+
+.vertical4 {
+    position: absolute;
+    top: 15%;
+    left: 76.75%;
+    width: 2px;
+    height: 898px;
+    background-color: #1E201E;
+    z-index: 15;
+
+}
+
+
+
+
+
+
+.BHTnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 31.4%;
+    z-index: 15;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.DLnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 23.2%;
+    z-index: 15;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.BsqNormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 15%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.DWLnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 39.6%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.LEnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 47.8%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.SLCnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 56%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.BHTnormal::placeholder {
+    color: #697565;
+}
+
+.BsqNormal::placeholder {
+    color: #697565;
+}
+
+.DLnormal::placeholder {
+    color: #3C3D37;
+}
+
+
+.DWLnormal::placeholder {
+    color: #3C3D37;
+}
+
+.LEnormal::placeholder {
+    color: #697565;
+}
+
+.SLCnormal::placeholder {
+    color: #3C3D37;
+}
+
+.DWL1 {
+    left: 37.2%;
+}
+
+.DWL2 {
+    left: 50.45%;
+}
+
+.DWL3 {
+    left: 63.7%;
+}
+
+.DWL4 {
+    left: 76.95%;
+}
+
+.Bsq1 {
+    left: 37.2%;
+}
+
+.Bsq2 {
+    left: 50.45%;
+}
+
+.Bsq3 {
+    left: 63.7%;
+}
+
+.Bsq4 {
+    left: 76.95%;
+}
+
+.DL1 {
+    left: 37.2%;
+}
+
+.DL2 {
+    left: 50.45%;
+}
+
+.DL3 {
+    left: 63.7%;
+}
+
+.DL4 {
+    left: 76.95%;
+}
+
+.BHT1 {
+    left: 37.2%;
+}
+
+.BHT2 {
+    left: 50.45%;
+}
+
+.BHT3 {
+    left: 63.7%;
+}
+
+.BHT4 {
+    left: 76.95%;
+}
+
+.LE1 {
+    left: 37.2%;
+}
+
+.LE2 {
+    left: 50.45%;
+}
+
+.LE3 {
+    left: 63.7%;
+}
+
+.LE4 {
+    left: 76.95%;
+}
+
+.SLC1 {
+    left: 37.2%;
+}
+
+.SLC2 {
+    left: 50.45%;
+}
+
+.SLC3 {
+    left: 63.7%;
+}
+
+.SLC4 {
+    left: 76.95%;
+}
+
+/* REPS -------------------------------------------- */
+
+.Reps {
+    position: absolute;
+    left: 33.8%;
+    color: white;
+}
+
+.rBsq {
+    top: 20.3%;
+}
+
+.rDL {
+    top: 28.5%;
+}
+
+.rBHT {
+    left: 28.9%;
+    top: 36.7%;
+}
+
+.rDWL {
+    left: 32.5%;
+    top: 45.2%;
+}
+
+.rLE {
+    left: 32.5%;
+    top: 53.1%;
+}
+
+.rSLC {
+    left: 32.5%;
+    top: 61.3%;
+}
+
+
+
+.centerAbsButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    height: 15%;
+    width: 100%;
+}
+
+.absButton {
+    background-color: #ECDFCC;
+    top: 50%;
+    height: 40%;
+    width: 45%;
+    border-radius: 20px;
+    border: none;
+    font-size: 50px;
+}
+
+
+
+.centerDoneButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 64.3%;
+    height: 35.7%;
+    width: 100%;
+}
+
+.doneButton {
+    background-color: #ECDFCC;
+    top: 50%;
+    height: 30%;
+    width: 60%;
+    border-radius: 20px;
+    border: none;
+    font-size: 50px;
+    transition: 150ms ease-out;
+}
+
+
+
+
+.doneButton:active {
+    scale: 1.25;
+    background-color: transparent;
+    font-size: 0px;
+}

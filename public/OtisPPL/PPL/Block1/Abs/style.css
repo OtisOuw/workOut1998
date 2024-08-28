@@ -1,0 +1,79 @@
+body {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E201E;
+
+}
+
+.body2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Ensures vertical alignment of items */
+    margin: 0; /* Remove default margin */
+}
+
+.back {
+    width: 70px;
+    height: 70px;
+    margin: 50px; /* Ensures no additional margin affecting positioning */
+    align-self: flex-start; /* Aligns item to the start of the cross-axis (vertical) */
+    justify-self: flex-start; /* Aligns item to the start of the main-axis (horizontal) */
+    z-index: 100;
+}
+
+
+
+.centerDoneButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 64.3%;
+    height: 35.7%;
+    width: 100%;
+}
+
+.doneButton {
+    background-color: #ECDFCC;
+    top: 50%;
+    height: 30%;
+    width: 60%;
+    border-radius: 20px;
+    border: none;
+    font-size: 50px;
+    transition: 150ms ease-out;
+}
+
+
+
+
+.doneButton:active {
+    scale: 1.25;
+    background-color: transparent;
+    font-size: 0px;
+}
+
+.imageBackdrop {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8.5%;
+    left: 5%;
+    height: 65%;
+    width: 90%;
+    background-color: #ECDFCC;
+    border-radius: 25px;
+}
+
+.image {
+    display: block; /* Ensure it's treated as a block-level element for centering */
+    margin: auto;   /* Center the image within its parent container */
+    max-height: 95%; /* Ensure the image does not overflow its container */
+    max-width: 90%;  /* Ensure the image does not overflow its container */
+}

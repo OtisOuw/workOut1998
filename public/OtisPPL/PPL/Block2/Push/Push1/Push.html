@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="body2">
+        <img class="back" src="left-arrow.png" onclick="goBack()"> 
+    </div>
+
+    <div class="infoSpot0">
+        <a class="BPInfo" onclick="goToBPInfo()"><h3>Barbell Bench Press x8</h3></a>
+    </div>
+    <div class="infoSpot1">
+        <a class="APInfo" onclick="goToAPInfo()"><h3>Arnold Press x12</h3></a>
+    </div>
+    <div class="infoSpot2">
+        <a class="CBPInfo" onclick="goToCBPInfo()"><h3>Close Grip SM Press x15</h3></a>
+    </div>
+    <div class="infoSpot3">
+        <a class="LTHCFInfo" onclick="goToLTHCFInfo()"><h3>Low To High CF x15-12</h3></a>
+    </div>
+    <div class="infoSpot4">
+        <a class="BFSCInfo" onclick="goToBFSCInfo()"><h3>Barbell Floor Skull Crusher x8-10</h3></a>
+    </div>
+    <div class="infoSpot5">
+        <a class="ELRInfo" onclick="goToELRInfo()"><h3>Egyptian Lateral Raise x12-15</h3></a>
+    </div>
+    <div class="infoSpot6">
+        <a class="ROTEInfo" onclick="goToROTEInfo()"><h3>Rope Overhead Triceps Extention x12-15</h3></a>
+    </div>
+    <div class="infoSpot7">
+        <a class="HLRInfo" onclick="goToHLRInfo()"><h3>Hanging Leg Raise x6</h3></a>
+    </div>
+
+
+
+    <form id="myForm" action="/submit" method="POST">
+        <input class="BPnormal BP1 blur" type="number" id="BP1" placeholder="0">
+        <input class="BPnormal BP2 blur" type="number" id="BP2" placeholder="0">
+        
+
+
+        <input class="APnormal AP1 blur" type="number" id="AP1" placeholder="0">
+        <input class="APnormal AP2 blur" type="number" id="AP2" placeholder="0">
+        
+
+        <input class="CBPnormal CBP1 blur" type="number" id="CBP1"  placeholder="0">
+        <input class="CBPnormal CBP2 blur" type="number" id="CBP2"  placeholder="0">
+        
+
+        <input class="LTHCFnormal LTHCF1 blur" type="number" id="LTHCF1" placeholder="0">
+        <input class="LTHCFnormal LTHCF2 blur" type="number" id="LTHCF2" placeholder="0">
+        
+
+        <input class="BFSCnormal BFSC1 blur" type="number" id="BFSC1"  placeholder="0">
+        <input class="BFSCnormal BFSC2 blur" type="number" id="BFSC2"  placeholder="0">
+        
+
+        <input class="ELRnormal ELR1 blur" type="number" id="ELR1"  placeholder="0">
+        <input class="ELRnormal ELR2 blur" type="number" id="ELR2"  placeholder="0">
+        
+
+        <input class="ROTEnormal ROTE1 blur" type="number" id="ROTE1"  placeholder="0">
+        <input class="ROTEnormal ROTE2 blur" type="number" id="ROTE2"  placeholder="0">
+       
+
+        <input class="HLRnormal HLR1 blur" type="number" id="HLR1"  placeholder="0">
+        <input class="HLRnormal HLR2 blur" type="number" id="HLR2"  placeholder="0">
+        <input class="HLRnormal HLR3 blur" type="number" id="HLR3"  placeholder="0">
+    </form>
+    <div class="vertical1"></div>
+    <div class="vertical2"></div>
+    <div class="vertical3"></div>
+    <div class="vertical4"></div>
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <div class="row5"></div>
+    <div class="row6"></div>
+    <div class="row7"></div>
+    <div class="row0"></div>
+
+    
+
+    <div class="centerDoneButton">
+        <button class="doneButton" onclick="goDone()">Finish Him</button>
+    </div>
+
+   
+
+    
+
+
+
+    
+    
+</body>
+</html>

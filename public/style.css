@@ -1,0 +1,46 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically */
+    height: 100vh; /* Makes the body take up the full height of the viewport */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #1E201E; /* Background color of the page */
+}
+
+/* Button Styles */
+button {
+    width: 50%; /* Button width as a percentage of the parent element */
+    font-size: 18px; /* Size of the text inside the button */
+    background-color: #ECDFCC; /* Button background color */
+    color: black; /* Text color */
+    border: none; /* Removes the default border */
+    cursor: pointer; /* Changes cursor to pointer when hovering over the button */
+    touch-action: manipulation; /* Optimizes touch behavior on mobile devices */
+    text-align: center; /* Centers text inside the button */
+    line-height: 30px;
+    box-sizing: border-box;
+    height: 100px;
+    border-radius: 25px;
+}
+
+/* Samsung S21 Specific Media Query */
+@media (max-width: 1080px) and (max-height: 2400px) {
+    body {
+        font-size: 16px; /* Adjust font size */
+        padding: 10px;
+    }
+
+    header, footer {
+        padding: 15px 10px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    button {
+        padding: 15px;
+    }
+}

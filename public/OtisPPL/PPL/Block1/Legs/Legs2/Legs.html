@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="body2">
+        <img class="back" src="left-arrow.png" onclick="goBack()"> 
+    </div>
+
+    <div class="infoSpot1">
+        <a class="DLInfo" onclick="goToDLInfo()"><h3>Deadlift x4</h3></a>
+    </div>
+    <div class="infoSpot2">
+        <a class="FQInfo" onclick="goToFQInfo()"><h3>Front Squat x6-8</h3></a>
+    </div>
+    <div class="infoSpot3">
+        <a class="SLPInfo" onclick="goToSLPInfo()"><h3>Singe-Leg Leg Press x10-12</h3></a>
+    </div>
+    <div class="infoSpot4">
+        <a class="SLLEInfo" onclick="goToSLLEInfo()"><h3>Singe-Leg Leg Extention x15</h3></a>
+    </div>
+    <div class="infoSpot5">
+        <a class="SLLCInfo" onclick="goToSLLCInfo()"><h3>Singe-Leg Leg Curl x12</h3></a>
+    </div>
+
+
+
+
+    <form id="myForm" action="/submit" method="POST">
+        <input class="DLnormal DL1 blur" type="number" id="DL1" placeholder="0">
+        <input class="DLnormal DL2 blur" type="number" id="DL2" placeholder="0">
+        <input class="DLnormal DL3 blur" type="number" id="DL3" placeholder="0">
+        <input class="DLnormal DL4 blur" type="number" id="DL4" placeholder="0"> 
+
+        <input class="FQnormal FQ1 blur" type="number" id="FQ1"  placeholder="0">
+        <input class="FQnormal FQ2 blur" type="number" id="FQ2"  placeholder="0">
+        <input class="FQnormal FQ3 blur" type="number" id='FQ3'  placeholder="0"> 
+        <!--<input class="FQnormal FQ4 blur" type="number" id="FQ4" placeholder="0"> -->
+
+        <input class="SLPnormal SLP1 blur" type="number" id="SLP1" placeholder="0">
+        <input class="SLPnormal SLP2 blur" type="number" id="SLP2" placeholder="0">
+        <!--<input class="SLPnormal SLP3 blur" type="number" id="SLP3" placeholder="0">
+        <input class="SLPnormal SLP4" type="number"  placeholder="0"> --> 
+
+        <input class="SLLEnormal SLLE1 blur" type="number" id="SLLE1"  placeholder="0">
+        <input class="SLLEnormal SLLE2 blur" type="number" id="SLLE2"  placeholder="0">
+        <input class="SLLEnormal SLLE3 blur" type="number" id="SLLE3" placeholder="0">
+        <!--<input class="SLLEnormal SLLE4" type="number"  placeholder="0"> -->
+
+        <input class="SLLCnormal SLLC1 blur" type="number" id="SLLC1"  placeholder="0">
+        <input class="SLLCnormal SLLC2 blur" type="number" id="SLLC2"  placeholder="0">
+        <input class="SLLCnormal SLLC3 blur" type="number" id="SLLC3"  placeholder="0">
+        <!--<input class="SLLCnormal SLLC4" type="number"  placeholder="0"> --> 
+
+    </form>
+    <div class="vertical1"></div>
+    <div class="vertical2"></div>
+    <div class="vertical3"></div>
+    <div class="vertical4"></div>
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <div class="row5"></div>
+
+    
+
+    <div class="centerDoneButton">
+        <button class="doneButton" onclick="goDone()">Finish Him</button>
+    </div>
+
+
+    <div class="centerAbsButton">
+        <button class="absButton" onclick="goBack()">Abs</button>
+    </div>
+   
+
+    
+
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <script src="../../../../../config.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="body2">
+        <img class="back" src="left-arrow.png" onclick="goBack()"> 
+    </div>
+
+
+
+    <form id="myForm" action="/submit" method="POST">
+        <input class="BsqNormal Bsq1 blur" type="number" id="wBsq1" placeholder="0">
+        <input class="BsqNormal Bsq2 blur" type="number" id="wBsq2" placeholder="0">
+        <input class="BsqNormal Bsq3 blur" type="number" id="wBsq3" placeholder="0">
+        <input class="BsqNormal Bsq4 blur" type="number" id="wBsq4" placeholder="0">
+
+        <input class="DLnormal DL1 blur" type="number" id="DL1" weight1="weight1" placeholder="0">
+        <input class="DLnormal DL2 blur" type="number" id="DL2" weight1="weight1" placeholder="0">
+        <!-- <input class="DLnormal DL3" type="number" weight1="weight1" placeholder="0"> 
+        <input class="DLnormal DL4" type="number" weight1="weight1" placeholder="0"> -->
+
+        <input class="BHTnormal BHT1" type="number" id="BHT1" weight1="weight1" placeholder="0">
+        <input class="BHTnormal BHT2" type="number" id="BHT2" weight1="weight1" placeholder="0">
+        <input class="BHTnormal BHT3" type="number" id="BHT3" weight1="weight1" placeholder="0">
+    <!--<input class="BHTnormal BHT4" type="number" weight1="weight1" placeholder="0"> --> 
+
+        <input class="DWLnormal DWL1" type="number" id="DWL1" weight1="weight1" placeholder="0">
+        <input class="DWLnormal DWL2" type="number" id="DWL2" weight1="weight1" placeholder="0">
+        <!-- <input class="DWLnormal DWL3" type="number" weight1="weight1" placeholder="0">
+        <input class="DWLnormal DWL4" type="number" weight1="weight1" placeholder="0"> -->
+
+        <input class="LEnormal LE1" type="number" id="LE1" weight1="weight1" placeholder="0">
+        <input class="LEnormal LE2" type="number" id="LE2" weight1="weight1" placeholder="0">
+        <input class="LEnormal LE3" type="number" id="LE3" weight1="weight1" placeholder="0">
+    <!-- <input class="LEnormal LE4" type="number" weight1="weight1" placeholder="0"> --> 
+
+        <input class="SLCnormal SLC1" type="number" id="SLC1" weight1="weight1" placeholder="0">
+        <input class="SLCnormal SLC2" type="number" id="SLC2" weight1="weight1" placeholder="0">
+        <input class="SLCnormal SLC3" type="number" id="SLC3" weight1="weight1" placeholder="0">
+        <!-- <input class="SLCnormal SLC4" type="number" weight1="weight1" placeholder="0"> -->
+    </form>
+    <div class="vertical1"></div>
+    <div class="vertical2"></div>
+    <div class="vertical3"></div>
+    <div class="vertical4"></div>
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <div class="row5"></div>
+    <div class="row6"></div>
+
+    <div class="rowText">
+        <a class="backSquatInfo" onclick="goToBackSquatInfo()"><h3>Backsquat x5</h3></a>
+        <a class="deadliftInfo" onclick="goToDLInfo()"><h3>Deadlift x8</h3></a>
+        <a class="barbellHipThrustInfo" onclick="goToBHTInfo()"><h3>Barbell Hip <br> Thrust x10-12</h3></a>
+        <a class="DWLInfo" onclick="goToDWLInfo()"><h3>Dumbell <br> Walking Lunge x20</h3></a>
+        <a class="LeInfo" onclick="goToLEInfo()"><h3>Leg Extention x15</h3></a>
+        <a class="SLCInfo" onclick="goToSLCInfo()"><h3>Seated Leg Curl x15</h3></a>
+    </div>
+
+
+    <div class="centerAbsButton">
+        <button class="absButton" onclick="goBack()">Abs</button>
+    </div>
+    
+
+    <div class="centerDoneButton">
+        <button class="doneButton" onclick="goDone()">Finish Him</button>
+    </div>
+
+   
+
+    
+
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="body2">
+        <img class="back" src="left-arrow.png" onclick="goBack()"> 
+    </div>
+
+    <div class="infoSpot0">
+        <a class="NGPInfo" onclick="goToNGPInfo()"><h3>Neuteral Grip Pulldown x10-12</h3></a>
+    </div>
+    <div class="infoSpot1">
+        <a class="CSEORInfo" onclick="goToCSEORInfo()"><h3>Cable Elbows Out Row x10</h3></a>
+    </div>
+    <div class="infoSpot2">
+        <a class="CSRInfo" onclick="goToCSRInfo()"><h3>Cable Seated Row x10</h3></a>
+    </div>
+    <div class="infoSpot3">
+        <a class="KSACPOInfo" onclick="goToKSACPOInfo()"><h3>Cable Pull Over x15</h3></a>
+    </div>
+    <div class="infoSpot4">
+        <a class="SGBSInfo" onclick="goToSGBSInfo()"><h3>Snatch Grip Barbell Shrug x15</h3></a>
+    </div>
+    <div class="infoSpot5">
+        <a class="CRFInfo" onclick="goToCRFInfo()"><h3>Cable Reverse Fly x20</h3></a>
+    </div>
+    <div class="infoSpot6">
+        <a class="SACCInfo" onclick="goToSACCInfo()"><h3>Single-Arm Cable Curl x12</h3></a>
+    </div>
+    <div class="infoSpot7">
+        <a class="HamCInfo" onclick="goToHamCInfo()"><h3>Hammer Curl x8</h3></a>
+    </div>
+
+
+
+    <form id="myForm" action="/submit" method="POST">
+        <input class="NGPnormal NGP1 blur" type="number" id="NGP1" placeholder="0">
+        <input class="NGPnormal NGP2 blur" type="number" id="NGP2" placeholder="0">
+        <input class="NGPnormal NGP3 blur" type="number" id="NGP3" placeholder="0">
+        <!-- <input class="NGPnormal NGP4 blur" type="number" id="NGP4" placeholder="0"> -->
+
+
+        <input class="CSEORnormal CSEOR1 blur" type="number" id="CSEOR1" placeholder="0">
+        <input class="CSEORnormal CSEOR2 blur" type="number" id="CSEOR2" placeholder="0">
+        <input class="CSEORnormal CSEOR3 blur" type="number" id="CSEOR3" placeholder="0">
+        <!-- <input class="CSEORnormal CSEOR4 blur" type="number" id="CSEOR4" placeholder="0"> -->
+
+        <input class="CSRnormal CSR1 blur" type="number" id="CSR1"  placeholder="0">
+        <input class="CSRnormal CSR2 blur" type="number" id="CSR2"  placeholder="0">
+        <input class="CSRnormal CSR3 blur" type="number" id='CSR3'  placeholder="0"> 
+        <!-- <input class="CSRnormal CSR4 blur" type="number" id="CSR4" placeholder="0"> -->
+
+        <input class="KSACPOnormal KSACPO1 blur" type="number" id="KSACPO1" placeholder="0">
+        <input class="KSACPOnormal KSACPO2 blur" type="number" id="KSACPO2" placeholder="0">
+        <input class="KSACPOnormal KSACPO3 blur" type="number" id="KSACPO3" placeholder="0">
+    <!--<input class="BHTnormal BHT4" type="number"  placeholder="0"> --> 
+
+        <input class="SGBSnormal SGBS1 blur" type="number" id="SGBS1"  placeholder="0">
+        <input class="SGBSnormal SGBS2 blur" type="number" id="SGBS2"  placeholder="0">
+        <input class="SGBSnormal SGBS3 blur" type="number" id="SGBS3" placeholder="0">
+        <!--<input class="DWLnormal DWL4" type="number"  placeholder="0"> -->
+
+        <input class="CRFnormal CRF1 blur" type="number" id="CRF1"  placeholder="0">
+        <input class="CRFnormal CRF2 blur" type="number" id="CRF2"  placeholder="0">
+        <input class="CRFnormal CRF3 blur" type="number" id="CRF3"  placeholder="0">
+    <!-- <input class="LEnormal LE4" type="number"  placeholder="0"> --> 
+
+        <input class="SACCnormal SACC1 blur" type="number" id="SACC1"  placeholder="0">
+        <input class="SACCnormal SACC2 blur" type="number" id="SACC2"  placeholder="0">
+        <input class="SACCnormal SACC3 blur" type="number" id="SACC3"  placeholder="0">
+        <!-- <input class="SLCnormal SLC4" type="number"  placeholder="0"> -->
+
+        <input class="HamCnormal HamC1 blur" type="number" id="HamC1"  placeholder="0">
+        <input class="HamCnormal HamC2 blur" type="number" id="HamC2"  placeholder="0">
+        <input class="HamCnormal HamC3 blur" type="number" id="HamC3"  placeholder="0">
+    </form>
+    <div class="vertical1"></div>
+    <div class="vertical2"></div>
+    <div class="vertical3"></div>
+    <div class="vertical4"></div>
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <div class="row5"></div>
+    <div class="row6"></div>
+    <div class="row7"></div>
+    <div class="row0"></div>
+
+    
+
+    <div class="centerDoneButton">
+        <button class="doneButton" onclick="goDone()">Finish Him</button>
+    </div>
+
+   
+
+    
+
+
+
+    
+    
+</body>
+</html>

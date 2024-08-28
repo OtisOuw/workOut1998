@@ -1,0 +1,750 @@
+body {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E201E;
+
+}
+
+
+.body2 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Ensures vertical alignment of items */
+    margin: 0; /* Remove default margin */
+}
+
+.back {
+    width: 70px;
+    height: 70px;
+    margin: 50px; /* Ensures no additional margin affecting positioning */
+    align-self: flex-start; /* Aligns item to the start of the cross-axis (vertical) */
+    justify-self: flex-start; /* Aligns item to the start of the main-axis (horizontal) */
+    z-index: 100;
+}
+
+.row0 {
+    position: absolute;
+    top: 6.8%;
+    height: 150px;
+    width: 80%;
+    background-color: #697565;
+    border-radius: 25px 25px 0 0;
+    
+}
+
+
+.row1 {
+    position: absolute;
+    top: 15%;
+    height: 150px;
+    width: 80%;
+    background-color: #3C3D37;
+    
+}
+
+.row2 {
+    position: absolute;
+    top: 23.2%;
+    height: 150px;
+    width: 80%;
+    background-color: #697565;
+}
+
+.row3 {
+    position: absolute;
+    top: 31.4%;
+    height: 150px;
+    width: 80%;
+    background-color: #3C3D37;
+}
+
+.row4 {
+    position: absolute;
+    top: 39.6%;
+    height: 150px;
+    width: 80%;
+    background-color: #697565;
+}
+
+.row5 {
+    position: absolute;
+    top: 47.8%;
+    height: 150px;
+    width: 80%;
+    background-color: #3C3D37;
+}
+
+.row6 {
+    position: absolute;
+    top: 56%;
+    height: 150px;
+    width: 80%;
+    background-color: #697565;
+    border-radius: 0 0 25px 25px;
+}
+
+
+.SealRInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 25px;
+    top: 16.5%;
+    left: 12%;
+}
+
+.KSACPOInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 22px;
+    top: 23%;
+    left: 12%;
+}
+
+.RPDInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 25px;
+    top: 31.9%;
+    left: 12%;
+}
+
+.DPCInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 25px;
+    top: 41%;
+    left: 12%;
+}
+
+.DHCInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 25px;
+    top: 47.5%;
+    left: 12%;
+}
+
+.DumbSupCurlInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 25px;
+    top: 56.5%;
+    left: 11.5%;
+}
+
+.SPIDERCInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 25px;
+    top: 56.5%;
+    left: 11.5%;
+}
+
+
+.SAPInfo {
+    position: absolute;
+    color: #ECDFCC;
+    font-size: 25px;
+    top: 56.5%;
+    left: 11.5%;
+}
+
+.vertical1 {
+    position: absolute;
+    top: 6.8%;
+    left: 37%;
+    width: 2px;
+    height: 64.4%;
+    background-color: #1E201E;
+    z-index: 10;
+
+}
+
+.vertical2 {
+    position: absolute;
+    top: 6.8%;
+    left: 50.25%;
+    width: 2px;
+    height: 65.6%;
+    background-color: #1E201E;
+    z-index: 15;
+
+}
+
+.vertical3 {
+    position: absolute;
+    top: 6.8%;
+    left: 63.5%;
+    width: 2px;
+    height: 64.4%;
+    background-color: #1E201E;
+    z-index: 15;
+
+}
+
+
+.vertical4 {
+    position: absolute;
+    top: 6.8%;
+    left: 76.75%;
+    width: 2px;
+    height: 64.4%;
+    background-color: #1E201E;
+    z-index: 15;
+
+}
+
+
+
+
+
+
+.RPDnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 31.4%;
+    z-index: 15;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.KSACPOnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 23.2%;
+    z-index: 15;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.SealRnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 15%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.DPCnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 39.6%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.DHCnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 47.8%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.DumbSupCurlnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 56%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+
+}
+
+.SPIDERCnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 64.2%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+    z-index: 120;
+
+}
+
+.SAPnormal {
+    position: absolute;
+    width: 123.5px;
+    height: 147px;
+    top: 6.8%;
+    z-index: 14;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #ECDFCC;
+    font-size: 40px;
+    outline: none;
+    z-index: 120;
+
+}
+
+
+.RPDnormal::placeholder {
+    color: #697565;
+}
+
+.SealRnormal::placeholder {
+    color: #697565;
+}
+
+.KSACPOnormal::placeholder {
+    color: #3C3D37;
+}
+
+
+.DPCnormal::placeholder {
+    color: #3C3D37;
+}
+
+.DHCnormal::placeholder {
+    color: #697565;
+}
+
+.DumbSupCurlnormal::placeholder {
+    color: #3C3D37;
+}
+
+.SPIDERCnormal::placeholder {
+    color: #697565;
+}
+
+.SAPnormal::placeholder {
+    color: #3C3D37;
+}
+
+.DPC1 {
+    left: 37.2%;
+}
+
+.DPC2 {
+    left: 50.45%;
+}
+
+.DPC3 {
+    left: 63.7%;
+}
+
+.DPC4 {
+    left: 76.95%;
+}
+
+.SealR1 {
+    left: 37.2%;
+}
+
+.SealR2 {
+    left: 50.45%;
+}
+
+.SealR3 {
+    left: 63.7%;
+}
+
+.SealR4 {
+    left: 76.95%;
+}
+
+.KSACPO1 {
+    left: 37.2%;
+}
+
+.KSACPO2 {
+    left: 50.45%;
+}
+
+.KSACPO3 {
+    left: 63.7%;
+}
+
+.KSACPO4 {
+    left: 76.95%;
+}
+
+.RPD1 {
+    left: 37.2%;
+}
+
+.RPD2 {
+    left: 50.45%;
+}
+
+.RPD3 {
+    left: 63.7%;
+}
+
+.RPD4 {
+    left: 76.95%;
+}
+
+.DHC1 {
+    left: 37.2%;
+}
+
+.DHC2 {
+    left: 50.45%;
+}
+
+.DHC3 {
+    left: 63.7%;
+}
+
+.DHC4 {
+    left: 76.95%;
+}
+
+.DumbSupCurl1 {
+    left: 37.2%;
+}
+
+.DumbSupCurl2 {
+    left: 50.45%;
+}
+
+.DumbSupCurl3 {
+    left: 63.7%;
+}
+
+.DumbSupCurl4 {
+    left: 76.95%;
+}
+
+.SPIDERC1 {
+    left: 37.2%;
+}
+
+.SPIDERC2 {
+    left: 50.45%;
+}
+
+.SPIDERC3 {
+    left: 63.7%;
+}
+
+.SPIDERC4 {
+    left: 76.95%;
+}
+
+.SAP1 {
+    left: 37.2%;
+}
+
+.SAP2 {
+    left: 50.45%;
+}
+
+.SAP3 {
+    left: 63.7%;
+}
+
+.SAP4 {
+    left: 76.95%;
+}
+
+
+
+.centerAbsButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    height: 15%;
+    width: 100%;
+}
+
+.absButton {
+    background-color: #ECDFCC;
+    top: 50%;
+    height: 40%;
+    width: 45%;
+    border-radius: 20px;
+    border: none;
+    font-size: 50px;
+}
+
+
+
+.centerDoneButton {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 64.3%;
+    height: 35.7%;
+    width: 100%;
+}
+
+.doneButton {
+    background-color: #ECDFCC;
+    top: 50%;
+    height: 30%;
+    width: 60%;
+    border-radius: 20px;
+    border: none;
+    font-size: 50px;
+    transition: 150ms ease-out;
+}
+
+
+
+
+.doneButton:active {
+    scale: 1.25;
+    background-color: transparent;
+    font-size: 0px;
+}
+
+
+.infoSpot1 {
+    display: flex;
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    display: flex;
+    height: 8.2%;
+    width: 27%;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.SealRInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 25px;
+}
+
+.infoSpot2 {
+    display: flex;
+    position: absolute;
+    top: 23.2%;
+    left: 10%;
+    display: flex;
+    height: 8.2%;
+    width: 27%;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.KSACPOInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 25px;
+}
+
+.infoSpot3 {
+    display: flex;
+    position: absolute;
+    top: 31.4%;
+    left: 10%;
+    display: flex;
+    height: 8.2%;
+    width: 27%;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.RPDInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 25px;
+}
+
+
+.infoSpot4 {
+    display: flex;
+    position: absolute;
+    top: 39.6%;
+    left: 10%;
+    display: flex;
+    height: 8.2%;
+    width: 27%;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.DPCInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 80%;
+    height: 30%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 25px;
+}
+
+.infoSpot5 {
+    display: flex;
+    position: absolute;
+    top: 47.8%;
+    left: 10%;
+    display: flex;
+    height: 8.2%;
+    width: 27%;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.DHCInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 80%;
+    height: 5%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 25px;
+}
+
+.infoSpot6 {
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    display: flex;
+    height: 8.2%;
+    width: 27%;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.DumbSupCurlInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 80%;
+    height: 5%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 25px;
+}
+
+
+.infoSpot7 {
+    display: flex;
+    position: absolute;
+    top: 64%;
+    left: 10%;
+    display: flex;
+    height: 8.2%;
+    width: 27%;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.SPIDERCInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 80%;
+    height: 0%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 25px;
+    z-index: 100;
+}
+
+
+.infoSpot0 {
+    display: flex;
+    position: absolute;
+    top: 6.8%;
+    left: 10%;
+    display: flex;
+    height: 8.2%;
+    width: 27%;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.SAPInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 80%;
+    height: 0%;
+    text-align: center;
+    word-break: break-word;
+    font-size: 25px;
+    z-index: 100;
+}

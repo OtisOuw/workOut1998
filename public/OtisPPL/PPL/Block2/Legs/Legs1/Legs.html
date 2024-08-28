@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="body2">
+        <img class="back" src="left-arrow.png" onclick="goBack()"> 
+    </div>
+
+    <div class="infoSpot1">
+        <a class="DLInfo" onclick="goToDLInfo()"><h3>Deadlift x3</h3></a>
+    </div>
+    <div class="infoSpot2">
+        <a class="TBSQInfo" onclick="goToTBSQInfo()"><h3>Tempo Backsquat x6</h3></a>
+    </div>
+    <div class="infoSpot3">
+        <a class="RBDHInfo" onclick="goToRBDHInfo()"><h3>Dumbell Hyperextention x20</h3></a>
+    </div>
+    <div class="infoSpot4">
+        <a class="SMRLInfo" onclick="goToSMRLInfo()"><h3>SM Reverse Lunge x15</h3></a>
+    </div>
+    <div class="infoSpot5">
+        <a class="LEInfo" onclick="goToLEInfo()"><h3>Eccentric Leg Extention x12</h3></a>
+    </div>
+    <div class="infoSpot6">
+        <a class="LLCInfo" onclick="goToLLCInfo()"><h3>Eccentric Lying Leg Curl x12</h3></a>
+    </div>
+    <div class="infoSpot7">
+        <a class="MHAInfo" onclick="goToMHAInfo()"><h3>Machine Hip Abduction x15</h3></a>
+    </div>
+
+
+
+    <form id="myForm" action="/submit" method="POST">
+        <input class="DLnormal DL1 blur" type="number" id="DL1" placeholder="0">
+        <input class="DLnormal DL2 blur" type="number" id="DL2" placeholder="0">
+        <input class="DLnormal DL3 blur" type="number" id="DL3" placeholder="0">
+        <input class="DLnormal DL4 blur" type="number" id="DL4" placeholder="0"> 
+
+        <input class="TBSQnormal TBSQ1 blur" type="number" id="TBSQ1"  placeholder="0">
+        <input class="TBSQnormal TBSQ2 blur" type="number" id="TBSQ2"  placeholder="0">
+        <!-- <input class="TBSQnormal TBSQ3 blur" type="number" id='TBSQ3'  placeholder="0"> 
+        <input class="TBSQnormal TBSQ4 blur" type="number" id="TBSQ4" placeholder="0"> -->
+
+        <input class="RBDHnormal RBDH1 blur" type="number" id="RBDH1" placeholder="0">
+        <input class="RBDHnormal RBDH2 blur" type="number" id="RBDH2" placeholder="0">
+        <!--<input class="RBDHnormal RBDH3 blur" type="number" id="RBDH3" placeholder="0">
+        <input class="BHTnormal BHT4" type="number"  placeholder="0"> --> 
+
+        <input class="SMRLnormal SMRL1 blur" type="number" id="SMRL1"  placeholder="0">
+        <input class="SMRLnormal SMRL2 blur" type="number" id="SMRL2"  placeholder="0">
+        <!--<input class="SMRLnormal SMRL3 blur" type="number" id="SMRL3" placeholder="0">
+        <input class="DWLnormal DWL4" type="number"  placeholder="0"> -->
+
+        <input class="LEnormal LE1 blur" type="number" id="LE1"  placeholder="0">
+        <input class="LEnormal LE2 blur" type="number" id="LE2"  placeholder="0">
+        <!-- <input class="LEnormal LE3 blur" type="number" id="LE3"  placeholder="0">
+        <input class="LEnormal LE4" type="number"  placeholder="0"> --> 
+
+        <input class="LLCnormal LLC1 blur" type="number" id="LLC1"  placeholder="0">
+        <input class="LLCnormal LLC2 blur" type="number" id="LLC2"  placeholder="0">
+        <!--<input class="LLCnormal LLC3 blur" type="number" id="LLC3"  placeholder="0">
+        <input class="SLCnormal SLC4" type="number"  placeholder="0"> -->
+
+        <input class="MHAnormal MHA1 blur" type="number" id="MHA1"  placeholder="0">
+        <input class="MHAnormal MHA2 blur" type="number" id="MHA2"  placeholder="0">
+        <!-- <input class="MHAnormal MHA3 blur" type="number" id="MHA3"  placeholder="0"> -->
+    </form>
+    <div class="vertical1"></div>
+    <div class="vertical2"></div>
+    <div class="vertical3"></div>
+    <div class="vertical4"></div>
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <div class="row5"></div>
+    <div class="row6"></div>
+    <div class="row7"></div>
+
+
+    <div class="centerAbsButton">
+        <button class="absButton" onclick="goBack()">Abs</button>
+    </div>
+    
+
+    <div class="centerDoneButton">
+        <button class="doneButton" onclick="goDone()">Finish Him</button>
+    </div>
+
+   
+
+    
+
+
+
+    
+    
+</body>
+</html>

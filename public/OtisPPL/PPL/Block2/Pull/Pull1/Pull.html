@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="body2">
+        <img class="back" src="left-arrow.png" onclick="goBack()"> 
+    </div>
+
+    <div class="infoSpot0">
+        <a class="LPInfo" onclick="goToLPInfo()"><h3>1 Arm Lat Pull-In x15-20</h3></a>
+    </div>
+    <div class="infoSpot1">
+        <a class="PUInfo" onclick="goToPUInfo()"><h3>Pull-Up x12</h3></a>
+    </div>
+    <div class="infoSpot2">
+        <a class="DOARInfo" onclick="goToDOARInfo()"><h3>DB One-Arm Row x6-8</h3></a>
+    </div>
+    <div class="infoSpot3">
+        <a class="CSTRInfo" onclick="goToCSTRInfo()"><h3>T-Bar Row (CHEST) x10-12</h3></a>
+    </div>
+    <div class="infoSpot4">
+        <a class="CRFInfo" onclick="goToCRFInfo()"><h3>Cable Reverse Fly x12-15</h3></a>
+    </div>
+    <div class="infoSpot5">
+        <a class="RURInfo" onclick="goToRURInfo()"><h3>Rope Upright Row x20</h3></a>
+    </div>
+    <div class="infoSpot6">
+        <a class="DSCInfo" onclick="goToDSCInfo()"><h3>Dumbell Supinated Curl x12-15</h3></a>
+    </div>
+    <div class="infoSpot7">
+        <a class="SPIDERCInfo" onclick="goToSPIDERCInfo()"><h3>Spider Curl 15-20</h3></a>
+    </div>
+
+
+
+    <form id="myForm" action="/submit" method="POST">
+        <input class="LPnormal LP1 blur" type="number" id="LP1" placeholder="0">
+        <input class="LPnormal LP2 blur" type="number" id="LP2" placeholder="0">
+        <!-- <input class="LPnormal LP3 blur" type="number" id="LP3" placeholder="0">
+        <input class="LPnormal LP4 blur" type="number" id="LP4" placeholder="0"> -->
+
+
+        <input class="PUnormal PU1 blur" type="number" id="PU1" placeholder="0">
+        <input class="PUnormal PU2 blur" type="number" id="PU2" placeholder="0">
+        <input class="PUnormal PU3 blur" type="number" id="PU3" placeholder="0">
+        <!-- <input class="PUnormal PU4 blur" type="number" id="PU4" placeholder="0"> -->
+
+        <input class="DOARnormal DOAR1 blur" type="number" id="DOAR1"  placeholder="0">
+        <input class="DOARnormal DOAR2 blur" type="number" id="DOAR2"  placeholder="0">
+        <!-- input class="DOARnormal DOAR3 blur" type="number" id='DOAR3'  placeholder="0"> 
+        <input class="DOARnormal DOAR4 blur" type="number" id="DOAR4" placeholder="0"> -->
+
+        <input class="CSTRnormal CSTR1 blur" type="number" id="CSTR1" placeholder="0">
+        <input class="CSTRnormal CSTR2 blur" type="number" id="CSTR2" placeholder="0">
+        <!--<input class="CSTRnormal CSTR3 blur" type="number" id="CSTR3" placeholder="0">
+        <input class="BHTnormal BHT4" type="number"  placeholder="0"> --> 
+
+        <input class="CRFnormal CRF1 blur" type="number" id="CRF1"  placeholder="0">
+        <input class="CRFnormal CRF2 blur" type="number" id="CRF2"  placeholder="0">
+        <!--<input class="CRFnormal CRF3 blur" type="number" id="CRF3" placeholder="0">
+        <input class="DWLnormal DWL4" type="number"  placeholder="0"> -->
+
+        <input class="RURnormal RUR1 blur" type="number" id="RUR1"  placeholder="0">
+        <input class="RURnormal RUR2 blur" type="number" id="RUR2"  placeholder="0">
+        <!-- <input class="RURnormal RUR3 blur" type="number" id="RUR3"  placeholder="0">
+        <input class="LEnormal LE4" type="number"  placeholder="0"> --> 
+
+        <input class="DSCnormal DSC1 blur" type="number" id="DSC1"  placeholder="0">
+        <input class="DSCnormal DSC2 blur" type="number" id="DSC2"  placeholder="0">
+        <!-- <input class="DSCnormal DSC3 blur" type="number" id="DSC3"  placeholder="0">
+        <input class="SLCnormal SLC4" type="number"  placeholder="0"> -->
+
+        <input class="SPIDERCnormal SPIDERC1 blur" type="number" id="SPIDERC1"  placeholder="0">
+        <input class="SPIDERCnormal SPIDERC2 blur" type="number" id="SPIDERC2"  placeholder="0">
+        <input class="SPIDERCnormal SPIDERC3 blur" type="number" id="SPIDERC3"  placeholder="0">
+    </form>
+    <div class="vertical1"></div>
+    <div class="vertical2"></div>
+    <div class="vertical3"></div>
+    <div class="vertical4"></div>
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <div class="row5"></div>
+    <div class="row6"></div>
+    <div class="row7"></div>
+    <div class="row0"></div>
+
+    
+
+    <div class="centerDoneButton">
+        <button class="doneButton" onclick="goDone()">Finish Him</button>
+    </div>
+
+   
+
+    
+
+
+
+    
+    
+</body>
+</html>

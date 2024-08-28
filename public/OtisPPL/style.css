@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E201E;
+
+}
+
+
+.Qoute {
+    position: absolute;
+    top: 70px;
+    color: white;
+    font-size: 70px;
+}
+
+.pushButton {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 500px;
+    height: 150px;
+    font-size: 100px;
+    background-color: #ECDFCC;
+    border-radius: 25px;
+}
+
+.pullButton {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 500px;
+    height: 150px;
+    font-size: 100px;
+    background-color: #ECDFCC;
+    border-radius: 25px;
+    
+
+}
+
+
+.legsButton {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 500px;
+    height: 150px;
+    font-size: 100px;
+    background-color: #ECDFCC;
+    border-radius: 25px;
+}
+
+.AbsButton {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    width: 500px;
+    height: 150px;
+    font-size: 100px;
+    background-color: #ECDFCC;
+    border-radius: 25px;
+}
+
+
+
+
+.back {
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    width: 200px;
+    height: 200px;
+}

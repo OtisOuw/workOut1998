@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="body2">
+        <img class="back" src="left-arrow.png" onclick="goBack()"> 
+    </div>
+
+    <div class="infoSpot1">
+        <a class="BPInfo" onclick="goToBPInfo()"><h3>Barbell Bench Press x4 </h3></a>
+    </div>
+    <div class="infoSpot2">
+        <a class="OPInfo" onclick="goToOPInfo()"><h3>Overhead Press x8</h3></a>
+    </div>
+    <div class="infoSpot3">
+        <a class="SEDInfo" onclick="goToSEDInfo()"><h3>Slow Eccentric Dip x8-10</h3></a>
+    </div>
+    <div class="infoSpot4">
+        <a class="TVPInfo" onclick="goToTVPInfo()"><h3>Triceps V-Bar Pushdown x12-15</h3></a>
+    </div>
+    <div class="infoSpot5">
+        <a class="MLRInfo" onclick="goToMLRInfo()"><h3>Machine Lateral Raise x15-20</h3></a>
+    </div>
+
+
+
+    <form id="myForm" action="/submit" method="POST">
+        <input class="BPnormal BP1 blur" type="number" id="BP1" placeholder="0">
+        <input class="BPnormal BP2 blur" type="number" id="BP2" placeholder="0">
+        <input class="BPnormal BP3 blur" type="number" id="BP3" placeholder="0">
+        <!--<input class="BPnormal BP4 blur" type="number" id="BP4" placeholder="0"> -->
+
+        <input class="OPnormal OP1 blur" type="number" id="OP1"  placeholder="0">
+        <input class="OPnormal OP2 blur" type="number" id="OP2"  placeholder="0">
+        <input class="OPnormal OP3 blur" type="number" id='OP3'  placeholder="0"> 
+        <!--<input class="OPnormal OP4 blur" type="number" id="OP4" placeholder="0"> -->
+
+        <input class="SEDnormal SED1 blur" type="number" id="SED1" placeholder="0">
+        <input class="SEDnormal SED2 blur" type="number" id="SED2" placeholder="0">
+
+
+        <input class="TVPnormal TVP1 blur" type="number" id="TVP1"  placeholder="0">
+        <input class="TVPnormal TVP2 blur" type="number" id="TVP2"  placeholder="0">
+        <input class="TVPnormal TVP3 blur" type="number" id="TVP3" placeholder="0">
+        <!-- <input class="TVPnormal TVP4" type="number"  placeholder="0"> -->
+
+        <input class="MLRnormal MLR1 blur" type="number" id="MLR1"  placeholder="0">
+        <input class="MLRnormal MLR2 blur" type="number" id="MLR2"  placeholder="0">
+        <input class="MLRnormal MLR3 blur" type="number" id="MLR3"  placeholder="0">
+        <!--<input class="MLRnormal MLR4" type="number"  placeholder="0"> --> 
+
+    </form>
+    <div class="vertical1"></div>
+    <div class="vertical2"></div>
+    <div class="vertical3"></div>
+    <div class="vertical4"></div>
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <div class="row5"></div>
+
+
+    
+
+    <div class="centerDoneButton">
+        <button class="doneButton" onclick="goDone()">Finish Him</button>
+    </div>
+
+
+    <div class="centerAbsButton">
+        <button class="absButton" onclick="goBack()">Abs</button>
+    </div>
+   
+
+    
+
+
+
+    
+    
+</body>
+</html>

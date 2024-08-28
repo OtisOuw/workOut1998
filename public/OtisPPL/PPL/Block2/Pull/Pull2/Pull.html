@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="body2">
+        <img class="back" src="left-arrow.png" onclick="goBack()"> 
+    </div>
+
+    <div class="infoSpot0">
+        <a class="SAPInfo" onclick="goToSAPInfo()"><h3>Single Arm Pulldown x12</h3></a>
+    </div>
+    <div class="infoSpot1">
+        <a class="SealRInfo" onclick="goToSealRInfo()"><h3>Seal Row x8-10</h3></a>
+    </div>
+    <div class="infoSpot2">
+        <a class="KSACPOInfo" onclick="goToKSACPOInfo()"><h3>Straight Arm Pullover x15-20</h3></a>
+    </div>
+    <div class="infoSpot3">
+        <a class="RPDInfo" onclick="goToRPDInfo()"><h3>Reverse Pec Deck x15</h3></a>
+    </div>
+    <div class="infoSpot4">
+        <a class="DPCInfo" onclick="goToDPCInfo()"><h3>Dumbell Pronated Curl x8</h3></a>
+    </div>
+    <div class="infoSpot5">
+        <a class="DHCInfo" onclick="goToDHCInfo()"><h3>Dumbell Hammer Curl x8</h3></a>
+    </div>
+    <div class="infoSpot6">
+        <a class="DumbSupCurlInfo" onclick="goToDumbSupCurlInfo()"><h3>Dumbell Pronated Curl x8</h3></a>
+    </div>
+
+
+
+    <form id="myForm" action="/submit" method="POST">
+        <input class="SAPnormal SAP1 blur" type="number" id="SAP1" placeholder="0">
+        <input class="SAPnormal SAP2 blur" type="number" id="SAP2" placeholder="0">
+        <input class="SAPnormal SAP3 blur" type="number" id="SAP3" placeholder="0">
+
+
+        <input class="SealRnormal SealR1 blur" type="number" id="SealR1" placeholder="0">
+        <input class="SealRnormal SealR2 blur" type="number" id="SealR2" placeholder="0">
+        <input class="SealRnormal SealR3 blur" type="number" id="SealR3" placeholder="0">
+        
+        <input class="KSACPOnormal KSACPO1 blur" type="number" id="KSACPO1"  placeholder="0">
+        <input class="KSACPOnormal KSACPO2 blur" type="number" id="KSACPO2"  placeholder="0">
+        <input class="KSACPOnormal KSACPO3 blur" type="number" id='KSACPO3'  placeholder="0"> 
+       
+
+        <input class="RPDnormal RPD1 blur" type="number" id="RPD1" placeholder="0">
+        <input class="RPDnormal RPD2 blur" type="number" id="RPD2" placeholder="0">
+        <input class="RPDnormal RPD3 blur" type="number" id="RPD3" placeholder="0">
+
+
+        <input class="DPCnormal DPC1 blur" type="number" id="DPC1"  placeholder="0">
+        <input class="DPCnormal DPC2 blur" type="number" id="DPC2"  placeholder="0">
+        <input class="DPCnormal DPC3 blur" type="number" id="DPC3" placeholder="0">
+        
+
+        <input class="DHCnormal DHC1 blur" type="number" id="DHC1"  placeholder="0">
+        <input class="DHCnormal DHC2 blur" type="number" id="DHC2"  placeholder="0">
+        <input class="DHCnormal DHC3 blur" type="number" id="DHC3"  placeholder="0">
+        
+        <input class="DumbSupCurlnormal DumbSupCurl1 blur" type="number" id="DumbSupCurl1"  placeholder="0">
+        <input class="DumbSupCurlnormal DumbSupCurl2 blur" type="number" id="DumbSupCurl2"  placeholder="0">
+        <input class="DumbSupCurlnormal DumbSupCurl3 blur" type="number" id="DumbSupCurl3"  placeholder="0">
+        
+
+    </form>
+    <div class="vertical1"></div>
+    <div class="vertical2"></div>
+    <div class="vertical3"></div>
+    <div class="vertical4"></div>
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <div class="row5"></div>
+    <div class="row6"></div>
+    <div class="row0"></div>
+
+    
+
+    <div class="centerDoneButton">
+        <button class="doneButton" onclick="goDone()">Finish Him</button>
+    </div>
+
+   
+
+    
+
+
+
+    
+    
+</body>
+</html>

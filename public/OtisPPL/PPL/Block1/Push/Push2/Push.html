@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Push 2</title>
+</head>
+<body>
+    <div class="body2">
+        <img class="back" src="left-arrow.png" onclick="goBack()"> 
+    </div>
+
+    <div class="infoSpot1">
+        <a class="CBPInfo" onclick="goToCBPInfo()"><h3>Close Grip Benchpress x6</h3></a>
+    </div>
+    <div class="infoSpot2">
+        <a class="OPInfo" onclick="goToOPInfo()"><h3>Overhead Press x5</h3></a>
+    </div>
+    <div class="infoSpot3">
+        <a class="DIPInfo" onclick="goToDIPInfo()"><h3>Dumbell Incline Press x10-12</h3></a>
+    </div>
+    <div class="infoSpot4">
+        <a class="PDInfo" onclick="goToPDInfo()"><h3>Pec Deck x15</h3></a>
+    </div>
+    <div class="infoSpot5">
+        <a class="CLRInfo" onclick="goToCLRInfo()"><h3>Cable Lateral Raise x8</h3></a>
+    </div>
+    <div class="infoSpot6">
+        <a class="CTKInfo" onclick="goToCTKInfo()"><h3>Cable Triceps Kickback x20 </h3></a>
+    </div>
+
+
+
+    <form id="myForm" action="/submit" method="POST">
+        <input class="CBPnormal CBP1 blur" type="number" id="CBP1" placeholder="0">
+        <input class="CBPnormal CBP2 blur" type="number" id="CBP2" placeholder="0">
+        <input class="CBPnormal CBP3 blur" type="number" id="CBP3" placeholder="0">
+        <!-- <input class="BPnormal BP4 blur" type="number" id="Bench4" placeholder="0"> -->
+
+        <input class="OPnormal OP1 blur" type="number" id="OP1"  placeholder="0">
+        <input class="OPnormal OP2 blur" type="number" id="OP2"  placeholder="0">
+        <input class="OPnormal OP3 blur" type="number" id='OP3'  placeholder="0"> 
+        <!-- <input class="DLnormal DL4" type="number"  placeholder="0"> -->
+
+        <input class="DIPnormal DIP1 blur" type="number" id="DIP1" placeholder="0">
+        <input class="DIPnormal DIP2 blur" type="number" id="DIP2" placeholder="0">
+        <input class="DIPnormal DIP3 blur" type="number" id="DIP3" placeholder="0">
+    <!--<input class="BHTnormal BHT4" type="number"  placeholder="0"> --> 
+
+        <input class="PDnormal PD1 blur" type="number" id="PD1"  placeholder="0">
+        <input class="PDnormal PD2 blur" type="number" id="PD2"  placeholder="0">
+        <input class="PDnormal PD3 blur" type="number" id="PD3" placeholder="0">
+        <!--<input class="DWLnormal DWL4" type="number"  placeholder="0"> -->
+
+        <input class="CLRnormal CLR1 blur" type="number" id="CLR1"  placeholder="0">
+        <input class="CLRnormal CLR2 blur" type="number" id="CLR2"  placeholder="0">
+        <input class="CLRnormal CLR3 blur" type="number" id="CLR3"  placeholder="0">
+    <!-- <input class="LEnormal LE4" type="number"  placeholder="0"> --> 
+
+        <input class="CTKnormal CTK1 blur" type="number" id="CTK1"  placeholder="0">
+        <input class="CTKnormal CTK2 blur" type="number" id="CTK2"  placeholder="0">
+        <input class="CTKnormal CTK3 blur" type="number" id="CTK3"  placeholder="0">
+        <!-- <input class="SLCnormal SLC4" type="number"  placeholder="0"> -->
+    </form>
+    <div class="vertical1"></div>
+    <div class="vertical2"></div>
+    <div class="vertical3"></div>
+    <div class="vertical4"></div>
+    <div class="row1"></div>
+    <div class="row2"></div>
+    <div class="row3"></div>
+    <div class="row4"></div>
+    <div class="row5"></div>
+    <div class="row6"></div>
+
+
+    <div class="centerAbsButton">
+        <button class="absButton" onclick="goBack()">Abs</button>
+    </div>
+    
+
+    <div class="centerDoneButton">
+        <button class="doneButton" onclick="goDone()">Finish Him</button>
+    </div>
+
+   
+
+    
+
+
+
+    
+    
+</body>
+</html>
