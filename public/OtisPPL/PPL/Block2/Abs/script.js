@@ -1,7 +1,7 @@
 let legsCount = 0;
 let updatedLegsCount = 0;
 
-const url = 'http://ppllog.xyz/save-count'
+const url = 'https://ppllog.xyz/save-count'
 
 
 
@@ -167,7 +167,7 @@ function sendData(input) {
     console.log(identifier)
 
     // Sending a POST request to the server
-    fetch('http://ppllog.xyz/save-data', {
+    fetch('https://ppllog.xyz/save-data', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

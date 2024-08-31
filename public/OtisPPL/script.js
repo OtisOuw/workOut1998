@@ -5,7 +5,7 @@ function goBack() {
     // Add other actions here
 }
 
-const url = 'http://ppllog.xyz/save-count'
+const url = 'https://ppllog.xyz/save-count'
 
 function goToAbs() {
     window.location.href = "PPL/Block1/Abs/abs.html"
