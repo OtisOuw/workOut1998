@@ -1,7 +1,7 @@
 let absCount = 0;
 let updatedAbsCount = 0;
 
-const url = 'http://192.168.2.201:3000/save-data'
+const url = 'http://ppllog.xyz/save-data'
 
 
 

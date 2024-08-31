@@ -1,7 +1,7 @@
 let pullCount = 0;
 let updatedPullCount = 0;
 
-const url = 'http://192.168.2.201:3000/save-count'
+const url = 'http://ppllog.xyz/save-count'
 
 
 
@@ -171,7 +171,7 @@ function sendData(input) {
     console.log(identifier)
 
     // Sending a POST request to the server
-    fetch('http://192.168.2.201:3000/save-data', {
+    fetch('http://ppllog.xyz/save-data', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
