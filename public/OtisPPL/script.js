@@ -16,6 +16,13 @@ let pushCount; // Declare pushCount in the global scope
 
         document.addEventListener('DOMContentLoaded', async () => {
             try {
+
+                const legsButton = document.querySelector('.legsButton');
+                const pushButton = document.querySelector('.pushButton');
+                const absButton = document.querySelector('.absButton');
+                const pullButton = document.querySelector('.pullButton');
+
+
                 // Start fetching all counts concurrently
                 const [pushResponse, pullResponse, legsResponse, absResponse] = await Promise.all([
                     fetch('/api/pushCount'),
@@ -34,17 +41,45 @@ let pushCount; // Declare pushCount in the global scope
                 pullCount = pullData.value;
                 legsCount = legsData.value;
                 absCount = absData.value;
-                
-                // Log other counts
-                //console.log('Push Count:', pushCount);
-                //console.log('Pull Count:', pullCount);
-                //console.log('Legs Count:', legsCount);
-                //console.log('Abs Count:', absCount);
+
+                function shakeLegs() {
+                    legsButton.classList.add('vibrate-3');
+                }
+
+                function shakeAbs() {
+                    absButton.classList.add('vibrate-2')
+                }
+
+                function shakePull() {
+                    pullButton.classList.add('vibrate-1');
+                }
+
+                function shakePush() {
+                    pushButton.classList.add('vibrate-3');
+                }
+
+                function findSmallestVar(a, b, c) {
+                    if (a <= b && a <= c) {
+                        shakeAbs();
+                        shakeLegs();
+                        return 'legsCount'; // Return the variable name or reference
+                    } else if (b <= a && b <= c) {
+                        shakePush();
+                        return 'pushCount'; // Return the variable name or reference
+                    } else {
+                        shakePull();
+                        return 'pullCount'; // Return the variable name or reference
+                    }
+                }
+
+                let smallestVar = findSmallestVar(legsCount, pushCount, pullCount);
+                console.log("The smallest variable is:", smallestVar);
 
             } catch (error) {
                 console.error('Error:', error);
             }
         });
+
 
         function goToPush() { //FINISHED
 
