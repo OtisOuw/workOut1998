@@ -103,7 +103,7 @@ let pushCount; // Declare pushCount in the global scope
             console.log(identifier)
         
             // Sending a POST request to the server
-            fetch('http://localhost:3000/save-data', {
+            fetch('https://ppllog.xyz/save-data', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
