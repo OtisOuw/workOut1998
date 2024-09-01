@@ -71,7 +71,7 @@ function goToMHAInfo() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('/api/pullCount');
+        const response = await fetch('/api/legsCount');
         const data = await response.json();
         
         pullCount = data.value; // Extract the number from the object

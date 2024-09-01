@@ -22,7 +22,7 @@ function goDone() {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            name: 2, //Legs = 1 Legs = 2 Pull = 3 Abs = 4 Cardio = 5
+            name: 2, //Legs = 1 Push = 2 Pull = 3 Abs = 4 Cardio = 5
             count: updatedLegsCount // Use the latest updatedLegsCount
         })
     };
@@ -67,7 +67,7 @@ function goToSLCInfo() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('/api/LegsCount');
+        const response = await fetch('/api/pushCount');
         const data = await response.json();
         
         LegsCount = data.value; // Extract the number from the object

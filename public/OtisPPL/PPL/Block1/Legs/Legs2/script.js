@@ -65,7 +65,7 @@ function goToSLLCInfo() {
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('/api/LegsCount');
+        const response = await fetch('/api/legsCount');
         const data = await response.json();
         
         LegsCount = data.value; // Extract the number from the object

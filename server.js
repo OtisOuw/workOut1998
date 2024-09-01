@@ -419,7 +419,7 @@ var fileName = '';
 // Route to handle saving data
 app.post('/save-data', (req, res) => {
     const { text, identifier } = req.body; 
-    console.log(text + identifier)
+    console.log(text + ' ' + identifier)
     
     if (identifier.startsWith('Bsq')) { // START OF LEGS 1 BLOCK 1
          fileName = 'weightValues/Legs/Bsq_values.txt'
@@ -549,6 +549,50 @@ app.post('/save-data', (req, res) => {
         fileName =  'weightValues/Push/TVP_values.txt'
     } else if (identifier.startsWith('MLR')) {
         fileName =  'weightValues/Push/MLR_values.txt'
+    } else if (identifier.startsWith('Push')) {
+        fileName = 'pplCount/pushCount.txt'
+        stringCount = text.toString()
+        fs.writeFile(fileName, stringCount, (err) => {
+            if (err) {
+                return res.status(500).json({ error: 'Failed to save data' });
+            }
+            console.log('Yippiee' + fileName);
+        })
+
+        return;
+    } else if (identifier.startsWith('Pull')) {
+        fileName = 'pplCount/pullCount.txt'
+        stringCount = text.toString()
+        fs.writeFile(fileName, stringCount, (err) => {
+            if (err) {
+                return res.status(500).json({ error: 'Failed to save data' });
+            }
+            console.log('Yippiee' + fileName);
+        })
+
+        return;
+    } else if (identifier.startsWith('Legs')) {
+        fileName = 'pplCount/legsCount.txt'
+        stringCount = text.toString()
+        fs.writeFile(fileName, stringCount, (err) => {
+            if (err) {
+                return res.status(500).json({ error: 'Failed to save data' });
+            }
+            console.log('Yippiee' + fileName);
+        })
+        return;
+    } else if (identifier.startsWith('Abs')) {
+        fileName = 'pplCount/absCount.txt'
+        stringCount = text.toString()
+        fs.writeFile(fileName, stringCount, (err) => {
+            if (err) {
+                return res.status(500).json({ error: 'Failed to save data' });
+            }
+            console.log('Yippiee' + fileName);
+        })
+        return;
+    } else {
+        fileName = 'trash.txt'
     }
     
 
@@ -561,7 +605,7 @@ app.post('/save-data', (req, res) => {
             console.error('Error writing to file', err);
             return res.status(500).json({ error: 'Failed to save data' });
         }
-        console.log(identifier + ' ' + text + ' ' + fileName)
+        //console.log(identifier + ' ' + text + ' ' + fileName)
         res.status(200).json({ message: 'Data saved successfully' });
     });
 });
