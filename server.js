@@ -60,6 +60,13 @@ app.post('/login', (req, res) => {
 
 
 
+app.get('/nginx', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'login.html'));
+  });
+
+
+
+
 function lastNumberCounter(filePath) {
     try {
         // Read the file content
