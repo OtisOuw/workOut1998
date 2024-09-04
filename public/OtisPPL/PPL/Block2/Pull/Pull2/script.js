@@ -171,7 +171,7 @@ function sendData(input) {
     console.log(identifier)
 
     // Sending a POST request to the server
-    fetch('https://ppllog.xyz/save-data', {
+    fetch('https://ppllog.xyz/api/save-data', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

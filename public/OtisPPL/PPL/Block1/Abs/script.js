@@ -1,7 +1,7 @@
 let absCount = 0;
 let updatedAbsCount = 0;
 
-const url = 'https://ppllog.xyz/save-data'
+const url = 'https://ppllog.xyz/api/save-data'
 
 
 

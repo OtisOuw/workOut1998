@@ -4,10 +4,12 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
-const { Cipher } = require('crypto');
 
 const app = express();
 const PORT = 3000;
+app.use(cors());
+
+
 
 // Middleware for parsing request bodies
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -65,28 +67,20 @@ app.get('/', (req, res) => {
   });
 
 
-
-  app.use(cors({
-    origin: 'https://www.ppllog.xyz', // Allow this origin
-    methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
-
-
-
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://www.ppllog.xyz');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*'); // Allow all origins, or specify a domain
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS, PATCH, HEAD');
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     
+    // Handle preflight requests
     if (req.method === 'OPTIONS') {
-        res.sendStatus(204);
-    } else {
-        next();
+      return res.sendStatus(200);
     }
-});
+    
+    next();
+  });
 
-
+  
 
 
 
@@ -740,6 +734,7 @@ app.post('/save-count', (req, res) => {
 
     if (name === 1) {
         fileNaam = 'pplCount/legsCount.txt'
+        console.log('Test Legs');
     } else if (name === 2) {
         fileNaam = 'pplCount/pushCount.txt'
     } else if (name === 3) {
@@ -756,9 +751,9 @@ app.post('/save-count', (req, res) => {
     fs.writeFile(fileNaam, stringCount, (err) => {
         if (err) {
             console.error('Error writing to file', err);
-            return res.status(500).json({ error: 'Failed to save data' });
+            //return res.status(500).json({ error: 'Failed to save data' });
         }
-        res.status(200).json({ message: 'Data saved successfully' });
+        //res.status(200).json({ message: 'Data saved successfully' });
     })
     
 

@@ -163,7 +163,7 @@ function debounce(func, wait) {
 // Function to send data to the server
 function sendData(input) {
     const identifier = input.id || input.className;
-
+    console.log('ID ' + identifier);
 
     // Check if the input has a value and it is a valid number
     if (!input || input.value.trim() === '') {
@@ -181,7 +181,7 @@ function sendData(input) {
     console.log(identifier)
 
     // Sending a POST request to the server
-    fetch('https://ppllog.xyz/save-data', {
+    fetch('https://ppllog.xyz/api/save-data', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -193,6 +193,7 @@ function sendData(input) {
         console.log('Data saved successfully');
     })
     .catch((error) => {
+        console.log('DATA ' + data );
         console.error('Error:', error);
     });
 }
