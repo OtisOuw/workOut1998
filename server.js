@@ -24,7 +24,7 @@ app.use(session({
 // Middleware to protect routes
 app.use((req, res, next) => {
   // Allow API routes and the login page to bypass authentication
-  if (req.path.startsWith('/api/') || req.path === '/login' || req.path === '/public' || req.path === '/') {
+  if (req.path.startsWith('/api/') || req.path === '/login' || req.path === '/public') {
     return next();
   }
   
@@ -55,16 +55,14 @@ app.post('/login', (req, res) => {
     req.session.loggedIn = true;
     return res.redirect('/home.html');
   }
-  res.send('Login failed. <a href="/login">Try again</a>');
+  res.redirect('/login');
 });
 
 
 
-app.get('/nginx', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'login.html'));
+app.get('/', (req, res) => {
+    res.redirect('/login');
   });
-
-
 
 
 function lastNumberCounter(filePath) {
