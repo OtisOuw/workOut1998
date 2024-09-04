@@ -74,19 +74,6 @@ app.get('/', (req, res) => {
 
 
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://www.ppllog.xyz');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    
-    if (req.method === 'OPTIONS') {
-        res.sendStatus(204);
-    } else {
-        next();
-    }
-});
-
-
 
 
 
