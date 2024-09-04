@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<style>
+  html, body {
+    height: 100%; /* Ensure html and body take up full height */
+    margin: 0; /* Remove default margin */
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E201E; /* Background color of the page */
+  }
+  form {
+    background: #ECDFCC; /* Optional: Add a background color to the form for better visibility */
+    padding: 25px;
+    border-radius: 8px; /* Optional: Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better appearance */
+  }
+  
+  .LoginCSS {
+    position: relative;
+    left: 30%;
+    top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    width: 100px;
+  }
+</style>
+<body>
+  <form action="/login" method="post">
+    <label for="password">Key:</label>
+    <input class="passwordCSS" type="password" id="password" name="password" required>
+    <br>
+    <button class="LoginCSS" type="submit">Log in</button>
+  </form>
+</body>
+</html>

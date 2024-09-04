@@ -1,13 +1,11 @@
+//const { text } = require("body-parser");
+
 // script.js
 function goBack() {
     window.location.href = "../../index.html";
     
     // Add other actions here
 }
-
-const url = 'https://ppllog.xyz/save-count'
-
-
 
 
 let pushCount; // Declare pushCount in the global scope
@@ -85,25 +83,28 @@ let pushCount; // Declare pushCount in the global scope
 
 
         function sendData(input) {
-            const identifier = input.id || input.id;
-                
-            // Check if the input has a value and it is a valid number
-            if (!input || input.value.trim() === '') {
-                console.log('Invalid input or input is empty');
+            if (!input || !input.id) {
+                console.log('Invalid input or input does not have an id');
                 return;
             }
-        
+            
+            // Check if the input has a value and it is a valid number
+            if (input.value.trim() === '') {
+                console.log('Input value is empty');
+                return;
+            }
+            
             const value = parseFloat(input.value);
             if (isNaN(value)) {
                 console.log('Input value is not a valid number');
                 return;
             }
-        
-            const data = { text: value, identifier: identifier};
-            console.log(identifier)
-        
+            
+            const data = { text: value, identifier: input.id };
+            console.log(data);
+            
             // Sending a POST request to the server
-            fetch('https://ppllog.xyz/save-data', {
+            fetch('https://ppllog.xyz/api/save-data', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

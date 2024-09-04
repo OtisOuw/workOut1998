@@ -1,16 +1,64 @@
 const express = require('express');
+const session = require('express-session');
 const bodyParser = require('body-parser');
+const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
-const path = require('path'); // To work with file paths
 const { Cipher } = require('crypto');
 
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
-app.use(bodyParser.json());
-app.use(express.urlencoded({ extended: true }));
+// Middleware for parsing request bodies
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
+
+
+// Session management middleware
+app.use(session({
+  secret: 'your-secret-key',
+  resave: false,
+  saveUninitialized: true,
+}));
+
+// Middleware to protect routes
+app.use((req, res, next) => {
+  // Allow API routes and the login page to bypass authentication
+  if (req.path.startsWith('/api/') || req.path === '/login' || req.path === '/public' || req.path === '/') {
+    return next();
+  }
+  
+  // Check if the user is authenticated
+  if (req.session.loggedIn) {
+    return next();
+  }
+  
+  // Redirect to login page if not authenticated
+  res.redirect('/login');
+});
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Route for login page
+app.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    return res.redirect('/home.html');
+  }
+  res.sendFile(path.join(__dirname, 'public', 'login.html'));
+});
+
+// Handle login
+app.post('/login', (req, res) => {
+  const { password } = req.body;
+  if (password === 'a') {
+    req.session.loggedIn = true;
+    return res.redirect('/home.html');
+  }
+  res.send('Login failed. <a href="/login">Try again</a>');
+});
+
+
 
 function lastNumberCounter(filePath) {
     try {
@@ -41,8 +89,14 @@ function readLastNumber(filePath) {
     }
 }
 
-// Serve static files (e.g., HTML, CSS, JS)
-app.use(express.static('public'));
+
+
+
+
+
+
+
+
 
 app.get('/api/legsCount', (req, res) => {
     const filePath = path.join(__dirname, 'pplCount/legsCount.txt');
@@ -415,11 +469,13 @@ app.get('/api/MLR', (req, res) => {
     res.json({ value: readLastNumber(filePath) });
 });
 
-var fileName = '';
+
 // Route to handle saving data
-app.post('/save-data', (req, res) => {
+app.post('/api/save-data', (req, res) => {
     const { text, identifier } = req.body; 
-    console.log(text + ' ' + identifier)
+    const data2 = { text, identifier};
+    console.log(data2);
+    console.log('Text ' + text + ' ' + 'ID ' + identifier)
     
     if (identifier.startsWith('Bsq')) { // START OF LEGS 1 BLOCK 1
          fileName = 'weightValues/Legs/Bsq_values.txt'
@@ -554,9 +610,10 @@ app.post('/save-data', (req, res) => {
         stringCount = text.toString()
         fs.writeFile(fileName, stringCount, (err) => {
             if (err) {
-                return res.status(500).json({ error: 'Failed to save data' });
+                console.log('Test')
+                //return res.status(500).json({ error: 'Failed to save data' });
             }
-            console.log('Yippiee' + fileName);
+            //console.log('Yippiee' + fileName);
         })
 
         return;
@@ -565,9 +622,10 @@ app.post('/save-data', (req, res) => {
         stringCount = text.toString()
         fs.writeFile(fileName, stringCount, (err) => {
             if (err) {
-                return res.status(500).json({ error: 'Failed to save data' });
+                console.log('Test')
+                //return res.status(500).json({ error: 'Failed to save data' });
             }
-            console.log('Yippiee' + fileName);
+            //console.log('Yippiee' + fileName);
         })
 
         return;
@@ -576,9 +634,10 @@ app.post('/save-data', (req, res) => {
         stringCount = text.toString()
         fs.writeFile(fileName, stringCount, (err) => {
             if (err) {
-                return res.status(500).json({ error: 'Failed to save data' });
+                console.log('Test')
+                //return res.status(500).json({ error: 'Failed to save data' });
             }
-            console.log('Yippiee' + fileName);
+            //console.log('Yippiee' + fileName);
         })
         return;
     } else if (identifier.startsWith('Abs')) {
@@ -586,9 +645,10 @@ app.post('/save-data', (req, res) => {
         stringCount = text.toString()
         fs.writeFile(fileName, stringCount, (err) => {
             if (err) {
-                return res.status(500).json({ error: 'Failed to save data' });
+                console.log('Test')
+                //return res.status(500).json({ error: 'Failed to save data' });
             }
-            console.log('Yippiee' + fileName);
+            //console.log('Yippiee' + fileName);
         })
         return;
     } else {
@@ -603,12 +663,43 @@ app.post('/save-data', (req, res) => {
     fs.appendFile(fileName, '\n' + text, (err) => {
         if (err) {
             console.error('Error writing to file', err);
-            return res.status(500).json({ error: 'Failed to save data' });
+            console.log('Data not fine')
+            //return res.status(500).json({ error: 'Failed to save data' });
         }
         //console.log(identifier + ' ' + text + ' ' + fileName)
-        res.status(200).json({ message: 'Data saved successfully' });
+        console.log('Data Fine')
+        //res.status(200).json({ message: 'Data saved successfully' });
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 app.post('/save-count', (req, res) => { 
@@ -644,7 +735,44 @@ app.post('/save-count', (req, res) => {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Catch-all route for other requests
+app.get('*', (req, res) => {
+    if (req.session.loggedIn) {
+      res.sendFile(path.join(__dirname, 'public', 'home.html'));
+    } else {
+      res.redirect('/login');
+    }
+  });
+
+
+
+  
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
-});
+  });
+
+
+
+
+
