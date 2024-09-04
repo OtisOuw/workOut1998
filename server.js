@@ -66,13 +66,12 @@ app.get('/', (req, res) => {
 
 
 
-  app.use(cors({
+app.use(cors({
     origin: 'https://www.ppllog.xyz', // Allow this origin
     methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    optionsSuccessStatus: 204 // For older browsers that might not handle 204 correctly
 }));
-
-
 
 
 
