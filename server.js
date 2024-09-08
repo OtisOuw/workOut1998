@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
+const { stringify } = require('querystring');
 
 const app = express();
 const PORT = 3000;
@@ -742,7 +743,7 @@ app.post('/save-count', (req, res) => {
     } else if (name === 4) {
         fileNaam = 'pplCount/absCount.txt'
     } else {
-        console.log('Whoops couldnt find right file to save count in')
+        console.log('Whoops couldnt find right file to save count in');
         fileNaam = 'pplCount/trash.txt'
     }
 

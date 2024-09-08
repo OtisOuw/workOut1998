@@ -1,7 +1,7 @@
 let absCount = 0;
 let updatedAbsCount = 0;
 
-const url = 'https://ppllog.xyz/api/save-data'
+const url = 'https://ppllog.xyz/api/save-count';
 
 
 
@@ -44,8 +44,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         absCount = data.value; // Extract the number from the object
         updatedAbsCount = absCount + 1; // Update the variable
-        
-        console.log('Updated Abs Count:', updatedAbsCount);
 
     } catch (error) {
         console.error('Error:', error); // Handle any errors
